@@ -476,6 +476,14 @@ textarea {
         padding: 5rem 10% 0rem;
     }
 
+    .projects h2 {
+        padding-bottom: 1.5rem;
+    }
+
+    .project img {
+        height: 55%;
+    }
+
     .contact-section {
         background-image: url(/Images/contact-mobile.png);
         background-size: cover;
