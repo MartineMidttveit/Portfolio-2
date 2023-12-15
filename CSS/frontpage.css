@@ -231,39 +231,102 @@ textarea {
 .contact .button {
     align-self: end;
     min-width: 150px;
+    cursor: pointer;
+}
+
+.contact .button:hover {
+    background-color: #fffdfb;
+}
+
+
+/**/
+
+@media screen and (max-width: 1440px) {
+    .wrapper {
+        padding: 0 10%;
+    }
+}
+
+/* MEDIA QUERIES MACBOOK */
+@media only screen and (min-width: 1181px) and (max-width: 1440px) {
+    .welcome {
+        padding: 5rem 10% 6rem;
+    }
+
+    .about {
+        gap: 3rem;
+    }
+
+    .offers,
+    .myJourney {
+        width: 50%;
+    }
+
+    .projects {
+        padding: 6rem 10% 1rem;
+    }
+
+    .container {
+        gap: 2rem;
+        height: 620px;
+    }
+
+    .project {
+        height: 620px;
+    }
+
+    .project img {
+        height: 62%;
+    }
+
+    .small-btns {
+        height: 46px;
+        width: 140px;
+        padding: 1rem 1.5rem;
+    }
+
+    .info img {
+        height: 25px;
+        object-fit: contain;
+    }
+
+    .contact {
+        margin-top: 15rem;
+    }
 }
 
 /* MEDIA QUERIES IPAD */
 
-@media screen and (max-width: 1180px) {
-
-    .wrapper {
-        padding: 0 10%;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
 
     /* WELCOME */
-
-    .welcome,
+ 
     .about {
         flex-direction: column;
     }
 
     .welcome {
-        padding: 3rem 10%;
-        justify-content: start;
-        align-items: start;
+        padding: 3rem 10% 5rem;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .welcome-text {
+        width: 70%;
+    }
+
+    .welcome img {
+        width: 38%;
     }
 
     .welcome h1 {
-        font-size: 2.8rem;
+        font-size: 2rem;
         padding: .5rem 0 1rem;
     }
 
     .welcome .small-title {
         font-size: 1rem;
     }
-
-    /* ABOUT */ 
 
     .about {
         gap: 4rem;
@@ -300,5 +363,15 @@ textarea {
     .myJourney,
     .offers {
         width: 100%;
+    }
+
+    .projects {
+        padding: 4rem 10% 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        height: 500px;
+        gap: 1.8rem;
     }
 }
