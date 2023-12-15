@@ -140,8 +140,8 @@
 }
 
 .small-btns:hover {
-    background-color: #ff766fc5;
-    border: 1px solid #ff766fc5;
+    border: 1px solid #cdb0a1;
+    background-color: #cdb0a1;
     transition: .5s;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
 }
@@ -156,11 +156,7 @@
     gap: .5rem;
 }
 
-.buttons {
-    display: flex;
-    gap: 1rem;
-}
-  
+.buttons,
 .controls {
     display: flex;
     gap: 1rem;
