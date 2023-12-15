@@ -81,17 +81,11 @@
 
 .projects {
     position: relative;
-    height: 1100px;
-    padding: 6rem 0 7rem;
+    padding: 8rem 0 9rem;
 }
 
 .headlines {
     align-items: center;
-}
-
-#portfolioCarousel,
-#contactForm {
-    justify-content: center;
 }
 
 .carousel {
@@ -177,6 +171,60 @@
 
 .controls-mobile {
     display: none;
+}
+
+/* CONTACT FORM */
+
+.contact-section {
+    background-image: url(/Images/contact.png);
+    background-size: cover;
+    height: 900px;
+    display: flex;
+    align-items: center;
+}
+
+.contact {
+    margin-top: 8rem;
+    width: 100%;
+}
+
+.contact h2 {
+    width: 60%;
+    align-self: flex-end;
+    padding-bottom: 1.5rem;
+}
+
+.contact-form {
+    align-self: flex-end;
+    width: 60%;
+    gap: .7rem;
+}
+
+.contact-form input, 
+textarea {
+    border: none;
+    border-radius: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: .9rem;
+    padding-left: 1.5rem;
+}
+
+.contact-form input {
+    height: 2.8rem;
+}
+
+.names {
+    display: flex;
+    gap: .7rem;
+}
+
+.names input {
+    width: 50%;
+}
+
+textarea {
+    height: 200px;
+    padding-top: 1rem;
 }
 
 /* MEDIA QUERIES IPAD */
