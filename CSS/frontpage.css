@@ -32,6 +32,10 @@
     width: 100%;
 }
 
+.wave-mobile {
+    display: none;
+}
+
 .waves img {
     width: 100%;
 }
@@ -386,6 +390,102 @@ textarea {
         height: 700px;
         background-image: url(/Images/contact-ipad.png);
         background-color: #fffdfb;
+    }
+
+    .contact h2 {
+        align-self: start;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form input {
+        height: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .welcome {
+        flex-direction: column;
+        padding: 2rem 10% 4rem;
+        gap: 3rem;
+    }
+
+    .welcome h1 {
+        font-size: 1.6rem;
+        padding: .7rem 0;
+    }
+
+    .welcome .small-title {
+        font-size: 1rem;
+    }
+
+    .welcome img {
+        width: 80%;
+        align-self: start;
+    }
+
+    .about-section {
+        padding: 3rem 0;
+    }
+
+    .wave-desktop {
+        display: none;
+    }
+
+    .wave-mobile {
+        display: block;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .myJourney {
+        width: 100%;
+    }
+
+    .offers {
+        order: 2;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .offer {
+        flex-direction: column;
+    }
+
+    .box {
+        align-self: start;
+        margin-bottom: 1rem;
+        width: 90px;
+        height: 90px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        padding-top: 2rem;
+    }
+
+    .projects {
+        padding: 5rem 10% 0rem;
+    }
+
+    .contact-section {
+        background-image: url(/Images/contact-mobile.png);
+        background-size: cover;
+        height: 700px;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact {
+        margin-top: 3.5rem;
     }
 
     .contact h2 {
