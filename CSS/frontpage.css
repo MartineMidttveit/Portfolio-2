@@ -297,7 +297,7 @@ textarea {
 
 /* MEDIA QUERIES IPAD */
 
-@media only screen and (min-width: 768px) and (max-width: 1180px) {
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
 
     /* WELCOME */
  
@@ -366,12 +366,37 @@ textarea {
     }
 
     .projects {
-        padding: 4rem 10% 0;
+        padding: 5rem 10% 4rem;
+    }
+
+    .project {
+        max-height: 600px;
+    }
+
+    .info {
+        padding-top: 2rem;
     }
 
     .container {
-        grid-template-columns: 1fr 1fr;
-        height: 500px;
-        gap: 1.8rem;
+        grid-template-columns: 1fr;
+        height: 600px;
+    }
+
+    .contact-section {
+        height: 700px;
+        background-image: url(/Images/contact-ipad.png);
+        background-color: #fffdfb;
+    }
+
+    .contact h2 {
+        align-self: start;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form input {
+        height: 2.4rem;
     }
 }
