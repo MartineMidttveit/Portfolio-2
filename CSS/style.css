@@ -1,0 +1,130 @@
+/* GLOBAL STYLES */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy/Gilroy-Light.woff2') format('woff2'),
+        url('/Gilroy/Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy/Gilroy-ExtraBold.woff2') format('woff2'),
+        url('/Gilroy/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fffdfb;
+    color: #282525;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.title {
+    color: #282525;
+}
+
+p {
+    line-height: 1.9;
+    margin: 0;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+img {
+    object-fit: cover;
+}
+
+a, i {
+    color: #282525;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.small-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.medium-title {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: flex;
+    max-width: 200px;
+    max-height: 3rem;
+    background-color: #282525;
+    font-family: 'DM Sans', sans-serif;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #fffdfb;
+}
+
+.border-button:hover {
+    background-color: #ff766fc5;
+    border: 1px solid #ff766fc5;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+    .border-button {
+        padding: .6rem 1rem;
+        max-width: 180px;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+}

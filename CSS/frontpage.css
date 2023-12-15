@@ -1,0 +1,121 @@
+/* WELCOME SECTION */
+
+.welcome {
+    padding: 5rem 0 8rem;
+    align-items: center;
+    gap: 7rem;
+}
+
+.welcome img {
+    width: 40%;
+    border-radius: 20px;
+}
+
+.welcome-text .button {
+    margin-top: 1.8rem;
+}
+
+.welcome h1 {
+    padding: 1rem 0 1.5rem;
+}
+
+/* ABOUT */
+
+.about-section {
+    background-color: #E7D3C8;
+    padding: 6rem 0;
+}
+
+.about {
+    gap: 8rem;
+}
+
+.waves {
+    width: 100%;
+}
+
+.waves img {
+    width: 100%;
+}
+
+.about-section h2 {
+    padding-bottom: 3rem;
+}
+
+.offers {
+    width: 45%;
+    gap: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myJourney {
+    width: 55%;
+}
+
+/* BOX */
+
+.box {
+    background-color: #F3E9E3;
+    height: 120px;
+    min-width: 120px;
+    display: flex;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.box img {
+    height: 60px;
+}
+
+/* MEDIA QUERIES IPAD */
+
+@media screen and (max-width: 1180px) {
+
+    .wrapper {
+        padding: 0 10%;
+    }
+
+    .welcome,
+    .about {
+        flex-direction: column;
+    }
+
+    .about {
+        gap: 4rem;
+    }
+
+    .box {
+        height: 100px;
+        width: 100px;
+    }
+
+    .box img {
+        margin-bottom: 1rem;
+    }
+
+    .offers {
+        order: 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1.5rem;
+    }
+
+    .offer {
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .myJourney,
+    .offers {
+        width: 100%;
+    }
+}
