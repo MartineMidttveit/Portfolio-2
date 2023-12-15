@@ -126,6 +126,7 @@
     width: 130px;
     border-radius: 70px;
     border: 1px solid #433930;
+    gap: .5rem;
 }
 
 .info img {
