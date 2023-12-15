@@ -227,6 +227,11 @@ textarea {
     padding-top: 1rem;
 }
 
+.contact .button {
+    align-self: end;
+    min-width: 150px;
+}
+
 /* MEDIA QUERIES IPAD */
 
 @media screen and (max-width: 1180px) {
