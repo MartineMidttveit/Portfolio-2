@@ -466,6 +466,7 @@ textarea {
 
     .container {
         grid-template-columns: 1fr;
+        height: 550px;
     }
 
     .info {
@@ -476,12 +477,35 @@ textarea {
         padding: 5rem 10% 0rem;
     }
 
-    .projects h2 {
+    .projects h2,
+    .controls {
         padding-bottom: 1.5rem;
     }
 
+    .controls {
+        gap: 0;
+    }
+
+    .project {
+        height: 550px;
+    }
+
     .project img {
-        height: 55%;
+        height: 45%;
+    }
+
+    .buttons {
+        gap: .5rem;
+    }
+
+    .small-btns {
+        height: 46px;
+        width: 130px;
+        padding: 1rem 1.5rem;
+    }
+
+    .small-btns img {
+        height: 25px;
     }
 
     .contact-section {
@@ -506,5 +530,10 @@ textarea {
 
     .contact-form input {
         height: 2.4rem;
+        font-size: .8rem;
+    }
+
+    textarea {
+        font-size: .8rem;
     }
 }
