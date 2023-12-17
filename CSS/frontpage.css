@@ -422,7 +422,8 @@ textarea {
     }
 
     .myJourney,
-    .offers {
+    .offers,
+    .contact-form {
         width: 100%;
     }
 
@@ -451,10 +452,6 @@ textarea {
 
     .contact h2 {
         align-self: start;
-    }
-
-    .contact-form {
-        width: 100%;
     }
 
     .contact-form input {
