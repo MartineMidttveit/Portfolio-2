@@ -1,0 +1,11 @@
+footer {
+    height: 150px;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.footer-content p {
+    padding-top: 2rem;
+}
