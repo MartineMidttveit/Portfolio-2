@@ -1,7 +1,5 @@
 export const Intro = () => {
 
-
-
   return (
     <section className=" py-10 xl:py-20">
       <div className="wrapper flex flex-col md:flex-row items-center justify-between lg:gap-28 gap-[3rem]">
@@ -26,7 +24,6 @@ export const Intro = () => {
             READ MORE
           </a>
         </div>
-
 
         <img
           src="/profileimg.png"

@@ -9,8 +9,8 @@ import { motion } from 'framer-motion';
 const ProjectCard = ({ image, alt, task, title, githubLink, netlifyLink, onClick }) => {
   return (
     <div className="keen-slider__slide" >
-      <img onClick={onClick} src={image} alt={alt} className="max-w-full h-[67%] rounded-lg cursor-pointer" />
-      <div className="flex flex-col p-4">
+      <img onClick={onClick} src={image} alt={alt} className="w-full h-[67%] rounded-lg cursor-pointer shadow-lg" />
+      <div className="flex flex-col py-4">
         <div className="flex flex-col mb-4">
           <h4 className="text-lg font-bold text-gray-800">{task}</h4>
           <span className="text-sm text-gray-600">{title}</span>
@@ -68,9 +68,8 @@ const ProjectDetails = ({ project, onClose }) => {
       <img
         src={project.image}
         alt={project.alt}
-        className="rounded-lg max-w-full md:max-w-[50%] object-cover"
+        className="rounded-lg h-96 max-w-full md:max-w-[50%] object-cover"
       />
-
 
       <div className="flex flex-col space-y-4 w-full">
 
@@ -79,11 +78,9 @@ const ProjectDetails = ({ project, onClose }) => {
           <span className="text-lg text-gray-600">{project.title}</span>
         </div>
 
-
         <p className="text-gray-700 leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel dictum erat, quis lacinia augue. Vestibulum sit amet nibh orci. Quisque mattis nec sapien ac lobortis. Nullam malesuada risus nec ligula convallis viverra.
+          {project.description}
         </p>
-
 
         <div className="flex space-x-4">
           <a
@@ -106,7 +103,6 @@ const ProjectDetails = ({ project, onClose }) => {
           </a>
         </div>
 
-
         <div>
           <p className="text-gray-600 font-semibold mb-2">BUILT WITH:</p>
           <div className="flex space-x-4">
@@ -128,7 +124,6 @@ const ProjectDetails = ({ project, onClose }) => {
           </div>
         </div>
 
-
         <button
           className="flex p-[1rem] h-8 max-w-[180px] w-full rounded-full border border-[#433930] gap-[0.5rem] items-center justify-center hover:border-[#cdb0a1] hover:bg-[#cdb0a1] transition-colors duration-500"
           onClick={onClose}
@@ -139,7 +134,6 @@ const ProjectDetails = ({ project, onClose }) => {
     </motion.div>
   );
 };
-
 
 ProjectDetails.propTypes = {
   project: PropTypes.object.isRequired,
@@ -177,7 +171,6 @@ export const Projects = () => {
       },
     },
   });
-
 
   useEffect(() => {
     if (!details) {

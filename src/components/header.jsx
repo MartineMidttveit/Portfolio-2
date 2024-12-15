@@ -3,8 +3,6 @@ import { useState } from "react";
 export const Header = () => {
   const [isMenuMobileOpen, setIsMenuMobileOpen] = useState(false)
 
-
-
   const handleToggleMenuMobile = () => {
     setIsMenuMobileOpen(prevState => !prevState)
   }
@@ -12,9 +10,6 @@ export const Header = () => {
   const handleLinkClick = () => {
     setIsMenuMobileOpen(false);
   };
-
-
-
 
   return (
     <header className="bg-[#fffdfb] h-20">
@@ -31,7 +26,6 @@ export const Header = () => {
           />
           <span>|</span> Midttveit
         </a>
-
 
         <div className="hidden md:flex items-center gap-8 interval">
           <a
@@ -54,11 +48,9 @@ export const Header = () => {
           </a>
         </div>
 
-
         <div className="md:hidden flex items-center">
           {isMenuMobileOpen ? <X cursor={"pointer"} onClick={handleToggleMenuMobile} /> : <Menu cursor={"pointer"} onClick={handleToggleMenuMobile} />}
         </div>
-
 
         <div className="absolute top-20 left-0 w-full bg-[#fffdfb] border-t border-b border-gray-300 flex flex-col items-center gap-3 p-4 z-50 transition-all duration-300" style={{
           top: isMenuMobileOpen ? "5rem" : '-50rem'

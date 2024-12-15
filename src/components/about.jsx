@@ -23,7 +23,6 @@ export const About = () => {
               </div>
             </div>
 
-
             <div className="flex items-start xl:items-center flex-col xl:flex-row gap-6">
               <div className="bg-[#f3e9e3] max-w-36 w-full h-32 flex items-center justify-center rounded-lg interval">
                 <img
@@ -41,7 +40,6 @@ export const About = () => {
               </div>
             </div>
 
-
             <div className="flex items-start xl:items-center flex-col xl:flex-row gap-6">
               <div className="bg-[#f3e9e3] max-w-36 w-full h-32 flex items-center justify-center rounded-lg interval">
                 <img
@@ -53,20 +51,19 @@ export const About = () => {
               <div>
                 <h4 className="text-xl font-semibold interval">My toolbox</h4>
                 <p className="text-gray-700 mt-2 interval">
-                  Skilled in JavaScript, HTML, CSS, Strapi, and WordPress for
+                  Skilled in JavaScript, HTML, CSS, React, Tailwind and Bootstrap, aswell as Strapi and WordPress for
                   versatile and dynamic web development.
                 </p>
               </div>
             </div>
           </div>
 
-
           <div className="flex flex-col lg:w-1/2">
             <h3 className="text-2xl font-semibold mb-6 interval">My journey</h3>
             <p className="text-gray-700 mb-6 leading-relaxed interval">
               Currently, I&apos;m immersed in studying frontend development at
               Noroff School of Technology and Digital Media, where I&apos;ve delved
-              deep into the realms of HTML, CSS, and JavaScript. The learning
+              deep into the realms of HTML, CSS and JavaScript. The learning
               curve has been exhilarating, and I&apos;ve also explored the world of
               headless CMS, mastering platforms like WordPress and Strapi along
               the way. I aspire to craft seamless user experiences while
@@ -95,7 +92,6 @@ export const About = () => {
           </div>
         </div>
       </section>
-
 
       <div className="w-full">
         <img
