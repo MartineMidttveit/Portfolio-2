@@ -9,17 +9,17 @@ export const Intro = () => {
             Hi, my name is Martine
           </p>
           <h1 className="text-2xl lg:text-5xl font-bold py-4 md:py-6 scrollThree">
-            I&apos;m an aspiring <span className="text-pink-500">frontend developer</span>
+            I'm an aspiring <span className="text-secondary">frontend developer</span>
           </h1>
-          <span className="block h-1 w-20 bg-pink-500 scrollTwo"></span>
+          <span className="block h-1 w-20 bg-black scrollTwo"></span>
           <p className="mt-6 leading-relaxed scrollTwo">
-            I&apos;ve just completed my first year at Noroff School of Technology and
+            I've just completed my first year at Noroff School of Technology and
             Digital Media. Stay tuned as I dive into my second year, delving into
             new coding languages, systems, and enhancing my design skills.
           </p>
           <a
             href="#about"
-            className="mt-6 px-6 py-3 bg-[#282525] text-[#fffdfb] rounded-full font-medium text-base max-w-[200px] flex justify-center items-center hover:bg-[#cdb0a1] hover:text-[#282525] shadow-md transition-colors duration-500 scrollTwo"
+            className="mt-6 px-6 py-3 bg-primary text-background rounded-full font-medium text-base max-w-[200px] flex justify-center items-center hover:bg-secondary hover:text-primary shadow-md transition-colors duration-500 scrollTwo"
           >
             READ MORE
           </a>

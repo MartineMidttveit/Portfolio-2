@@ -20,7 +20,7 @@ const ProjectCard = ({ image, alt, task, title, githubLink, netlifyLink, onClick
             href={githubLink}
             target="_blank"
             rel="noreferrer"
-            className="flex p-[1rem] h-8 max-w-[130px] w-full rounded-full border border-[#433930] gap-[0.5rem] items-center justify-center hover:border-[#cdb0a1] hover:bg-[#cdb0a1] transition-colors duration-500"
+            className="flex p-[1rem] h-8 max-w-[130px] w-full rounded-full border border-customBrown gap-[0.5rem] items-center justify-center hover:border-secondary hover:bg-secondary transition-colors duration-500"
           >
             <img src="/github.png" alt="GitHub logo" className="w-5 h-5" />
             <span>GitHub</span>
@@ -29,7 +29,7 @@ const ProjectCard = ({ image, alt, task, title, githubLink, netlifyLink, onClick
             href={netlifyLink}
             target="_blank"
             rel="noreferrer"
-            className="flex p-[1rem] h-8 max-w-[130px] w-full rounded-full border border-[#433930] gap-[0.5rem] items-center justify-center hover:border-[#cdb0a1] hover:bg-[#cdb0a1] transition-colors duration-500"
+            className="flex p-[1rem] h-8 max-w-[130px] w-full rounded-full border border-customBrown gap-[0.5rem] items-center justify-center hover:border-secondary hover:bg-secondary transition-colors duration-500"
           >
             <img src="/netlify.png" alt="Netlify icon" className="w-5 h-5" />
             <span>Netlify</span>
@@ -87,7 +87,7 @@ const ProjectDetails = ({ project, onClose }) => {
             href={project.githubLink}
             target="_blank"
             rel="noreferrer"
-            className="flex p-[1rem] h-8 max-w-[130px] w-full rounded-full border border-[#433930] gap-[0.5rem] items-center justify-center hover:border-[#cdb0a1] hover:bg-[#cdb0a1] transition-colors duration-500"
+            className="flex p-[1rem] h-8 max-w-[130px] w-full rounded-full border border-customBrown gap-[0.5rem] items-center justify-center hover:border-secondary hover:bg-secondary transition-colors duration-500"
           >
             <img src="/github.png" alt="GitHub logo" className="w-5 h-5 mr-2" />
             GitHub
@@ -96,7 +96,7 @@ const ProjectDetails = ({ project, onClose }) => {
             href={project.netlifyLink}
             target="_blank"
             rel="noreferrer"
-            className="flex p-[1rem] h-8 max-w-[130px] w-full rounded-full border border-[#433930] gap-[0.5rem] items-center justify-center hover:border-[#cdb0a1] hover:bg-[#cdb0a1] transition-colors duration-500"
+            className="flex p-[1rem] h-8 max-w-[130px] w-full rounded-full border border-customBrown gap-[0.5rem] items-center justify-center hover:border-secondary hover:bg-secondary transition-colors duration-500"
           >
             <img src="/netlify.png" alt="Netlify icon" className="w-5 h-5 mr-2" />
             Netlify
@@ -125,7 +125,7 @@ const ProjectDetails = ({ project, onClose }) => {
         </div>
 
         <button
-          className="flex p-[1rem] h-8 max-w-[180px] w-full rounded-full border border-[#433930] gap-[0.5rem] items-center justify-center hover:border-[#cdb0a1] hover:bg-[#cdb0a1] transition-colors duration-500"
+          className="flex p-[1rem] h-8 max-w-[180px] w-full rounded-full border border-customBrown gap-[0.5rem] items-center justify-center hover:border-secondary hover:bg-secondary transition-colors duration-500"
           onClick={onClose}
         >
           Close Details

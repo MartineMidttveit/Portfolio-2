@@ -12,7 +12,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="bg-[#fffdfb] h-20">
+    <header className="h-20">
       <nav className="wrapper flex justify-between items-center h-full scrollOne">
 
         <a
@@ -52,7 +52,7 @@ export const Header = () => {
           {isMenuMobileOpen ? <X cursor={"pointer"} onClick={handleToggleMenuMobile} /> : <Menu cursor={"pointer"} onClick={handleToggleMenuMobile} />}
         </div>
 
-        <div className="absolute top-20 left-0 w-full bg-[#fffdfb] border-t border-b border-gray-300 flex flex-col items-center gap-3 p-4 z-50 transition-all duration-300" style={{
+        <div className="absolute top-20 left-0 w-full border-t border-b border-gray-300 flex flex-col items-center gap-3 p-4 z-50 transition-all duration-300" style={{
           top: isMenuMobileOpen ? "5rem" : '-50rem'
         }}>
           <a

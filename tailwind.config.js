@@ -10,9 +10,17 @@ export default {
         center: true,
       },
       screens: {
-        'md-2': '1180px'
-      }
+        'md-2': '1180px',
+      },
+      colors: {
+        primary: '#282525', 
+        secondary: '#cdb0a1', 
+        background: '#fffdfb',  
+        customBrown: '#433930',
+        background2: '#e7d3c8',
+        accent: '#f3e9e3',
+      },
     },
   },
   plugins: [],
-}
+};
