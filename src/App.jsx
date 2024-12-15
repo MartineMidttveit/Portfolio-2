@@ -8,7 +8,6 @@ import { Projects } from './components/projects'
 
 function App() {
 
-
   useEffect(() => {
 
     ScrollReveal().reveal('.nav-link', {
@@ -62,8 +61,6 @@ function App() {
       easing: 'ease-in-out',
     });
   }, []);
-
-
 
   return (
     <>
